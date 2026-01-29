@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <title>6분할 실시간 방송 모니터링</title>
+    <title>6분할 모니터링 (2열 3행)</title>
     <style>
-        body { margin: 0; padding: 0; display: flex; flex-wrap: wrap; height: 1vh; overflow: hidden; background-color: black; }
-        iframe { width: 50vw; height: 50vh; border: none; flex-shrink: 0; }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap; /* 요소가 넘치면 다음 줄로 */
+            height: 100vh;
+            overflow: hidden; 
+            background-color: black;
+        }
+
+        iframe {
+            /* 2열 구성을 위해 너비를 50%로 설정 */
+            width: 50vw;   
+            /* 3행 구성을 위해 높이를 33.33%로 설정 */
+            height: 33.33vh; 
+            border: none;
+            flex-shrink: 0;
+        }
     </style>
 </head>
 <body>
